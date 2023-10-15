@@ -27,9 +27,9 @@ window.onload = ()=>{
 }
 
 // ---------------------- Reset all values ----------------------
-reset.addEventListener('click',resteValue());
+reset.addEventListener('click',()=>resteValue());
 function resteValue(){
-    img.style.filter = 'none';
+    context.filter = 'none';
     saturate.value = 100;
     contrast.value = 100;
     brightness.value = 100;
@@ -37,6 +37,7 @@ function resteValue(){
     grayscale.value = 0;
     blur.value = 0;
     hueRotate.value = 0;
+    context.drawImage(img,0,0,canvas.width,canvas.height);
 }
 
 // ---------------------- Uplaod image  ----------------------
