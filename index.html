@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="image">
+            <div class="img">
+                <img id="img" alt="image">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="btn">
+                <label for="upload"><i class="bi bi-cloud-arrow-up-fill"></i><span>Upload</span></label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" min="0" max="200" value="100" id="saturate">
+                </li>
+                <li>
+                    <label for="contrast">Contrast</label>
+                    <input type="range" min="0" max="200" value="100" id="contrast">
+                </li>
+                <li>
+                    <label for="brightness">Brightness</label>
+                    <input type="range" min="0" max="200" value="100" id="brightness">
+                </li>
+                <li>
+                    <label for="sepia">Sepia</label>
+                    <input type="range" min="0" max="200" value="0" id="sepia">
+                </li>
+                <li>
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" step="0.1" min="0" max="1" value="0" id="grayscale">
+                </li>
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" step="0.1" min="0" max="10" value="0" id="blur">
+                </li>
+                <li>
+                    <label for="hue-rotate">Hue Rotate</label>
+                    <input type="range"  min="0" max="350" value="0" id="hue-rotate">
+                </li>
+                <li>
+                    <a download="image" id="download"><i class="bi bi-cloud-arrow-down-fill"></i><span>Download</span></a>
+                    <span id="reset"><i class="bi bi-trash-fill"></i><span>Reset</span></span>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
