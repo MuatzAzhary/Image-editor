@@ -53,6 +53,7 @@ main .filters {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 100px;
 }
 main .filters ul{
     display: flex;
@@ -112,6 +113,9 @@ main .filters ul li:last-child a, li:last-child > span{
     main .filters ul li:last-child{
         gap: 20px;
     }
+     main .filters {
+        padding-right: 0px !important;
+    }
 }
 @media screen and (max-width:780px){
     body{
@@ -120,5 +124,8 @@ main .filters ul li:last-child a, li:last-child > span{
     main{
         width: 100%;
         padding: 50px 10px;
+    }
+     main .filters {
+        padding-right: 30px;
     }
 }
