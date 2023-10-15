@@ -71,7 +71,7 @@ main .filters ul li{
 }
 main .filters ul li:last-child{
     flex-direction: row;
-    justify-content: space-around;
+    gap:30px;
     margin-top: 30px;
 }
 main .filters input{
